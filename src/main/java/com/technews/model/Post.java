@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.sun.istack.NotNull;
 
 import javax.persistence.*;
-import javax.xml.stream.events.Comment;
+import com.technews.model.Comment;
 import java.io.Serializable;
 import java.util.Objects;
 import java.util.Date;
@@ -34,7 +34,7 @@ public class Post implements Serializable {
     @Column(name = "updated_at")
     private Date updatedAt = new Date();
     @OneToMany(mappedBy = "postId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Comment> comments;
+    private List<com.technews.model.Comment> comments;
 
     public Post() {
     }
