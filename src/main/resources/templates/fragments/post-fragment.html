@@ -10,7 +10,7 @@
 
 <article class="post" th:fragment="post-fragment">
     <div class="title">
-        <a th:href="@{ ${post.postUrl} }" target="_blank">[[${post.title}]]</a>
+        <a th:href="@{ ${post.postUrl} }" target="_blank" class="post-title">[[${post.title}]]</a>
 
         <div th:if="${#strings.contains(post.postUrl, 'http://')}">
             <div th:with="arg=${#strings.replace(post.postUrl,'http://','')}">
@@ -72,18 +72,18 @@
             </div>
         </div>
 
-        <div th:if="${post.voteCount == 1}" class="meta">
+        <div th:if="${post.voteCount == 1}" class="meta points">
             [[${post.voteCount}]] point by [[${post.userName}]] on
-            <span th:text="${#dates.format(post.postedAt, 'MM-dd-YY')}"></span>
+            <span th:text="${#dates.format(post.postedAt, 'MM-dd-YY')}" class="date"></span>
 
             <a th:href="@{/post/{id}(id=${post.id})}" th:if="${post.comments.size() == 1}">[[${post.comments.size()}]]
                 comment</a>
             <a th:href="@{/post/{id}(id=${post.id})}" th:unless="${post.comments.size() == 1}">[[${post.comments.size()}]]
                 comments</a>
         </div>
-        <div th:unless="${post.voteCount == 1}" class="meta">
+        <div th:unless="${post.voteCount == 1}" class="meta points">
             [[${post.voteCount}]] points by [[${post.userName}]] on
-            <span th:text="${#dates.format(post.postedAt, 'MM-dd-YY')}"></span>
+            <span th:text="${#dates.format(post.postedAt, 'MM-dd-YY')}" class="date"></span>
             |
             <a th:href="@{/post/{id}(id=${post.id})}" th:if="${post.comments.size() == 1}">[[${post.comments.size()}]]
                 comment</a>

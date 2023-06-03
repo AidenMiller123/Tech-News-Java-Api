@@ -4,10 +4,12 @@
 
 body, html {
   height: 100%;
+  background-size: contain;
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #333;
+  background-image: url('background.jpg')
+
 }
 
 a {
@@ -76,14 +78,42 @@ form label {
 
 header {
   border-bottom: 1px solid #ccc;
+  border-radius: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 1%;
+  background-image: url('background-header.jpg');
+  width: 100%;
+
 }
 
 header h1 {
-  font-size: 1em;
+  font-size: 38px;
+  padding-left: 10px;
+}
+
+header h1 a {
+   color: black;
+   font-weight: bold;
+}
+
+.dashboard-btn {
+   font-size: 20px;
+   color: black;
+   padding-right: 10px;
+}
+
+.logout-btn {
+   font-size: 20px;
+   color: black;
+   padding-right: 10px;
+}
+
+.login-btn {
+   font-size: 20px;
+   color: black;
+   padding-right: 15px;
 }
 
 main {
@@ -120,12 +150,58 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
+  background-color: rgb(255, 255, 255, 0.5);
+}
+
+
+.post-title {
+    font-size: 25px;
+    color: black;
+    padding-left: 5px;
 }
 
 .post .title span {
   font-style: italic;
-  font-size: 90%;
-  color: #7d7d7d;
+  color: rgb(79, 79, 79);
+  padding-left: 5px;
+}
+
+.date {
+    color: white;
+}
+
+.points {
+    color: black;
+    padding-left: 5px;
+}
+
+.create-post {
+   padding-left: 15px;
+   background-color: rgb(255, 255, 255, 0.5);
+}
+
+.create-btn {
+   margin-bottom: 10px;
+   width: 150px;
+}
+
+.create-post-header {
+   color: black;
+   font-size: 25px;
+}
+
+.title-title {
+color: white;
+}
+
+.link-title {
+   color: white;
+}
+
+.your-post {
+   color: black;
+   background-color: rgb(255, 255, 255, 0.5);
+   width: max-content;
 }
 
 .edit-link {
@@ -181,4 +257,5 @@ footer {
   justify-content: center;
   padding: 1%;
   font-size: 110%;
+  color: white;
 }
