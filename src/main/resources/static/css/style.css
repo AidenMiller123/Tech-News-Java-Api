@@ -85,6 +85,7 @@ header {
   padding: 0 1%;
   background-image: url('background-header.jpg');
   width: 100%;
+  margin-bottom: 15px;
 
 }
 
@@ -96,6 +97,10 @@ header h1 {
 header h1 a {
    color: black;
    font-weight: bold;
+}
+
+.login-form {
+   margin-left: 45px;
 }
 
 .dashboard-btn {
@@ -115,6 +120,79 @@ header h1 a {
    color: black;
    padding-right: 15px;
 }
+
+
+.login-btn1 {
+   font-size: 20px;
+   color: white;
+   width: 300px;
+   height: 40px;
+   font-weight:lighter;
+}
+
+.signup-btn {
+   font-size: 20px;
+   color: white;
+   width: 300px;
+   height: 40px;
+   font-weight:lighter;
+   margin-bottom: 20px;
+}
+
+.email-title {
+   font-size: 25px;
+   background-color: rgb(255, 255, 255, 0.5);
+   width: max-content;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   padding: 5px;
+   font-weight: bold;
+   border-radius: 20px
+}
+
+.password-title {
+   font-size: 25px;
+   background-color: rgb(255, 255, 255, 0.5);
+   width: max-content;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   padding: 5px;
+   font-weight: bold;
+   border-radius: 20px;
+}
+
+.username-title {
+   font-size: 25px;
+   background-color: rgb(255, 255, 255, 0.5);
+   width: max-content;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   padding: 5px;
+   font-weight: bold;
+   border-radius: 20px;
+}
+
+.login-signup{
+  display: flex;
+  gap: 250px;
+}
+
+.email-input {
+   height: 40px;
+   width: 300px;
+}
+
+.password-input {
+   height: 40px;
+   width: 300px;
+   margin-bottom: 20px;
+}
+
+.username-input {
+   height: 40px;
+   width: 300px;
+}
+
 
 main {
   flex: 1;
@@ -150,7 +228,7 @@ main {
 .post {
   margin-bottom: 2%;
   line-height: 150%;
-  background-color: rgb(255, 255, 255, 0.5);
+  background-color: rgb(255, 255, 255, 0.8);
 }
 
 
@@ -177,7 +255,7 @@ main {
 
 .create-post {
    padding-left: 15px;
-   background-color: rgb(255, 255, 255, 0.5);
+   background-color: rgb(255, 255, 255, 0.8);
 }
 
 .create-btn {
@@ -191,17 +269,20 @@ main {
 }
 
 .title-title {
-color: white;
+color: black;
 }
 
 .link-title {
-   color: white;
+   color: black;
 }
 
 .your-post {
    color: black;
-   background-color: rgb(255, 255, 255, 0.5);
+   padding: 7px;
+   background-color: rgb(255, 255, 255, 0.8);
    width: max-content;
+   border-radius: 20px
+
 }
 
 .edit-link {
@@ -243,6 +324,22 @@ color: white;
 
 .edit-post-form {
   margin-bottom: 5%;
+  padding: 7px;
+  background-color: rgb(255, 255, 255, 0.9);
+}
+
+.edit-post-title {
+  padding: 7px;
+  background-color: rgb(255, 255, 255, 0.9);
+  width: max-content;
+  border-radius: 20px
+}
+
+.back-btn {
+  padding: 7px;
+  background-color: rgb(255, 255, 255, 0.9);
+  width: max-content;
+  border-radius: 20px
 }
 
 .flash-message {

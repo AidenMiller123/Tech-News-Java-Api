@@ -9,6 +9,7 @@
 <body>
 
 <div layout:fragment="content">
+  <div class="login-signup">
 
   <div th:if="${notice}" class="flash-message">
     <h3>[[${notice}]]</h3>
@@ -16,15 +17,15 @@
 
   <form action="#" th:action="@{/users/login}" th:object="${user}" method="post" class="login-form">
     <div>
-      <label>email:</label>
-      <input type="text" th:field="*{email}"/>
+      <label class="email-title">Email:</label>
+      <input type="text" class="email-input" th:field="*{email}"/>
     </div>
     <div>
-      <label>password:</label>
-      <input type="password" th:field="*{password}"/>
+      <label class="password-title">Password:</label>
+      <input type="password" class="password-input" th:field="*{password}"/>
     </div>
     <div>
-      <button type="submit">login</button>
+      <button type="submit" class="login-btn1">Login</button>
     </div>
   </form>
 
@@ -32,21 +33,22 @@
 
   <form action="#" th:action="@{/users}" th:object="${user}" method="post" class="signup-form">
     <div>
-      <label>username:</label>
-      <input type="text" th:field="*{username}"/>
+      <label class="username-title">Username:</label>
+      <input type="text" class="username-input" th:field="*{username}"/>
     </div>
     <div>
-      <label>email:</label>
-      <input type="text" th:field="*{email}"/>
+      <label class="email-title">Email:</label>
+      <input type="text" class="email-input" th:field="*{email}"/>
     </div>
     <div>
-      <label>password:</label>
-      <input type="password" th:field="*{password}"/>
+      <label class="password-title">Password:</label>
+      <input type="password" class="password-input" th:field="*{password}"/>
     </div>
     <div>
-      <button type="submit">signup</button>
+      <button type="submit" class="signup-btn">Signup</button>
     </div>
   </form>
+  </div>
 </div>
 
 </body>
