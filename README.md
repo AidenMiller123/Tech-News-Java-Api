@@ -1,4 +1,4 @@
-# tech-news-java-api
+# Tech-News-Java-Api
 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
